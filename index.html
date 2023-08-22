@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- Description of site -->
+    <meta name="description" content="Portifolio de Joanderson">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Joanderson">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Content of icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="icon" href="img/icon.png">
+
+    <title>Portifolio - Joanderson</title>
+</head>
+<body>
+    
+    <!-- Header of page -->
+    <header class="header">
+        <div class="identication-right" title="Navegation">
+                <nav class="identication">
+                    <i class='bx bx-up-arrow-alt'></i>
+                    <a href="#home" title="Home">01</a>
+                    <a href="#about" title="Sobre">02</a>
+                    <a href="#project" title="Projetos">03</a>
+                    <a href="#contato" title="Contato">04</a>
+                    <i class='bx bx-down-arrow-alt' ></i>
+                </nav>
+        </div>
+    </header>
+
+
+    <div class="identication-left" title="Identificação da página onde se encontra">
+        <p id="identication" class="identication">Portifólio</p>
+    </div>
+
+    <!-- Section design -->
+    <section  id="home" class="home">
+        <div class="home-content">
+            <a href="#" title="Logo" class="logo">Portifolio</a>
+            <div class="info-person">
+               
+                <h5 class="intro" >Olá, me chamo Joanderson</h5>
+
+                <h3>A desenvolvedor websites e sistemas.</h3>
+                <div class="typewriter">
+                    <h4 class="profissions"></h4>
+                </div>
+               
+                <p class="description">Seja bem vindo(a) ao meu portifólio. Aqui você saberá um pouco sobre a minha pessoa. Deixarei disponível meu curriculo no botão mais abaixo. Fique a vontade para explora totalmente o site.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="linguage" class="linguage">
+        <div class="linguage-content">
+            <i title="Python"  style="color:#f2c941;" class='bx bxl-python'></i>
+            <i title="Html" class='bx bxl-html5' style="color:#dd4b25;" ></i>
+            <i title="Css" class='bx bxl-css3'  style="color:#0068ba;" ></i>
+            <i title="JavaScript" class='bx bxl-javascript' style="color:#efd81d;" ></i>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+
+        <div id="about_content">
+
+            <div class="title-section">
+                <p id="teste">Sobre</p>
+            </div>
+            <img src="./img/photo.jpg" alt="photo_perfil">
+                <div class="about_texts">
+                    <h4>Joanderson Dos Santos Souza</h4>
+                    <p>
+                        Prazer, me chamo Joanderson e tenho 20 anos. Estou cursando o curso de "Redes de Computadores" no IFPB atualmente no 4 periodo da faculdade. Desenvolvi esse portifólio com intuito de práticar um pouco dos meus conhecimentos em programação que adquiri ao longo de 1 ano e meio. Esse projeto foi desenvolvido em HTML, CSS, JavaScript e utilização da API do github. 
+                        <p>Para baixar o meu curriculo completo clique no botão abaixo! </p>
+                    </p>
+                </div>
+
+                <a href="img/Curriculo - Joanderson.pdf" class="btn" title="Curriculo" target="_blank">Download CR <i class='bx bx-download'></i></a>
+            </div>
+        </div>
+    </section>
+   
+    <section id="project" class="project">
+
+        <div id="box_container" class="project_container">
+                <div class="title-section">
+                    <p>Projetos</p>
+                </div>
+        </div>
+    </section>
+
+    <footer id="contato">
+        <!-- Social media-->
+        <div id="social_media">
+            <a href="https://www.instagram.com/eu.joanderson/" target="_blank" title="Instagram"> <i class='bx bxl-instagram'></i> </a>
+            <a href="https://www.linkedin.com/in/joanderson-santos/" target="_blank" title="Linkedin"> <i class='bx bxl-linkedin' ></i> </a>
+            <a href="https://github.com/eujoanderson" target="_blank" title="github"> <i class='bx bxl-github'></i> </a>
+            <a href="mailto:joandersonsantossouza09@gmail.com" target="_blank" title="Email"><i class='bx bx-envelope'></i></a>
+        </div>
+        <div id="social_menu">
+            <a href="#home">Home</a>
+            <a href="#about">Sobre</a>
+            <a href="#project">Projetos</a>
+        </div>
+        <p id="copy">Copyright© 2023 - Joanderson</p>
+
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/api_git.js"></script>
+</body>
+</html>
