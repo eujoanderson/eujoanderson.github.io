@@ -1,4 +1,4 @@
-const token_acess = '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';
+const token_acess = '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';
 
 const requestOptions = {
 headers: {'Authorization': `Token ${token_acess}`}};
@@ -57,4 +57,3 @@ fetch('https://api.github.com/users/eujoanderson/repos', requestOptions)
     .catch(error => {
       console.error('Ocorreu um problema ao obter os detalhes do repositório:', error);
 });
-
