@@ -18,16 +18,13 @@
     <!-- Content of icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/style.css">
 
     <link rel="icon" href="img/icon.png">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Portifólio - Joanderson">
-    <meta property="og:description" content="Seja bem vindo(a) ao meu portifólio. Aqui você saberá um pouco sobre a minha pessoa. Deixarei disponível meu curriculo no botão mais abaixo. Fique a vontade para explora totalmente o site.">
-    <meta property="og:image" content="img/photo.jpg">
-    <meta property="og:url" content="URL da Página">
-    <meta property="og:type" content="website">
 
     <title>Portifolio - Joanderson</title>
 </head>
@@ -46,7 +43,6 @@
                 </nav>
         </div>
     </header>
-
 
     <div class="identication-left" title="Identificação da página onde se encontra">
         <p id="identication" class="identication">Portifólio</p>
@@ -81,33 +77,45 @@
     </section>
 
     <section id="about" class="about">
-
-        <div id="about_content">
-
-            <div class="title-section">
-                <p id="teste">Sobre</p>
+        <div class="content">
+            <div class="ajax">
+                <a href=""><i class='bx bxs-checkbox-checked state'></i>Perfil</a>
+                <a href=""><i class='bx bxs-bookmarks state' ></i>Experiência</a>
+                <a href=""><i class='bx bxs-graduation state' ></i>Formação</a>
             </div>
-            <img src="./img/photo.jpg" alt="photo_perfil">
-                <div class="about_texts">
-                    <h4>Joanderson Dos Santos Souza</h4>
-                    <p>
-                        Prazer, me chamo Joanderson e tenho 20 anos. Estou cursando o curso de "Redes de Computadores" no IFPB atualmente no 4 periodo da faculdade. Desenvolvi esse portifólio com intuito de práticar um pouco dos meus conhecimentos em programação que adquiri ao longo de 1 ano e meio. Esse projeto foi desenvolvido em HTML, CSS, JavaScript e utilização da API do github. 
-                        <p>Para baixar o meu curriculo completo clique no botão abaixo! </p>
-                    </p>
+
+            <div id="about_content">
+                <div class="card-content">
+                    <h2>Curso: 4* Redes De Computadores</h2>
+
+                    <div class="card-box">
+                        <p>Instituição: IFPB</p>
+                        <p ><span class="status">Status:</span> Em andamento</p>
+                    </div>
                 </div>
+                <div class="card-content">
+                    <h2>Curso: Desenvolvimento Web Completo</h2>
 
-                <a href="img/Curriculo - Joanderson.pdf" class="btn" title="Curriculo" target="_blank">Download CR <i class='bx bx-download'></i></a>
-            </div>
+                    <div class="card-box">
+                        <p>Instituição: Udemy</p>
+                        <p ><span class="status">Status:</span> Concluído</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2>Curso: Montador e reparador de computadores</h2>
+
+                    <div class="card-box">
+                        <p>Instituição: PBTec</p>
+                        <p ><span class="status">Status:</span> Concluído</p>
+                    </div>
+                </div>
+            </div>  
         </div>
     </section>
    
     <section id="project" class="project">
 
-        <div id="box_container" class="project_container">
-                <div class="title-section">
-                    <p>Projetos</p>
-                </div>
-        </div>
+        <div id="box_container" class="project_container"></div>
     </section>
 
     <footer id="contato">
@@ -115,7 +123,7 @@
         <div id="social_media">
             <a href="https://www.instagram.com/eu.joanderson/" target="_blank" title="Instagram"> <i class='bx bxl-instagram'></i> </a>
             <a href="https://www.linkedin.com/in/joanderson-santos/" target="_blank" title="Linkedin"> <i class='bx bxl-linkedin' ></i> </a>
-            <a href="https://github.com/eujoanderson" target="_blank" title="github"> <i class='bx bxl-github'></i> </a>
+            <a href="https://github.com/eujoanderson" target="_blank" title="Github"> <i class='bx bxl-github'></i> </a>
             <a href="mailto:joandersonsantossouza09@gmail.com" target="_blank" title="Email"><i class='bx bx-envelope'></i></a>
         </div>
         <div id="social_menu">

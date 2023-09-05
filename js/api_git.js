@@ -1,4 +1,4 @@
-const token_acess = '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';
+const token_acess = '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';
 
 const requestOptions = {
 headers: {'Authorization': `Token ${token_acess}`}};
@@ -11,7 +11,7 @@ fetch('https://api.github.com/users/eujoanderson/repos', requestOptions)
         const elemento = document.getElementById("box_container")
 
         console.log(reqData)
-        console.log(reqData.name, reqData.language, reqData.visibility, reqData.id, reqData.html_url)
+        console.log(reqData.name, reqData.language, reqData.visibility, reqData.id, reqData.html_url, reqData.created_at)
 
         let status = reqData.language
 
@@ -19,18 +19,16 @@ fetch('https://api.github.com/users/eujoanderson/repos', requestOptions)
           status = "--";
         }
 
-        //Date  
         const date = new Date(reqData.created_at)
         const dates = `${date.getDate().toString().padStart(2, '0')}/${date.getMonth().toString().padStart(2, '0')}/${date.getFullYear()}`
-        //Create element Dad
+        console.log(dates)
+
         const element = document.createElement('div')
         const span = document.createElement('span')
 
-        //Create element Child
         const title = document.createElement('h4')
         const paragraph = document.createElement('p')
 
-        //Create avatar
         const avatar = document.createElement("a")
         avatar.className = "bx bxl-github"
         avatar.style = "font-size:50px;"
@@ -48,7 +46,6 @@ fetch('https://api.github.com/users/eujoanderson/repos', requestOptions)
         title.innerHTML = reqData.name
         paragraph.innerHTML = dates
 
-        //Element DAD
         elemento.appendChild(element)
         element.appendChild(avatar)
         element.appendChild(title)
