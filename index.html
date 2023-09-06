@@ -26,6 +26,8 @@
 
     <link rel="icon" href="img/icon.png">
 
+    <script src="./js/ajax.js"></script>
+
     <title>Portifolio - Joanderson</title>
 </head>
 <body>
@@ -79,52 +81,12 @@
     <section id="about" class="about">
         <div class="content">
             <div class="ajax">
-                <a href=""><i class='bx bxs-checkbox-checked state'></i>Perfil</a>
-                <a href=""><i class='bx bxs-bookmarks state' ></i>Experiência</a>
-                <a href=""><i class='bx bxs-graduation state' ></i>Formação</a>
+                <a id="perfil"><i class='bx bxs-checkbox-checked state'></i>Perfil</a>
+                <a ><i class='bx bxs-bookmarks state' ></i>Experiência</a>
+                <a ><i class='bx bxs-graduation state' ></i>Formação</a>
             </div>
 
-            <div class="about_content">
-                <div class="card-content">
-                    <h2>Curso: 4* Redes De Computadores</h2>
-
-                    <div class="card-box">
-                        <p>Instituição: IFPB</p>
-                        <p ><span class="status">Status:</span> Em andamento</p>
-                    </div>
-
-                    <div class="btn-download">
-                        Download <i class='bx bxs-cloud-download' ></i>
-                    </div>
-                </div>
-
-                <div class="card-content">
-                    <h2>Curso: Desenvolvimento Web Completo</h2>
-
-                    <div class="card-box">
-                        <p>Instituição: Udemy</p>
-                        <p ><span class="status">Status:</span> Concluído</p>
-                    </div>
-
-                    <div class="btn-download">
-                        Download <i class='bx bxs-cloud-download' ></i>
-                    </div>
-                </div>
-                <div class="card-content">
-                    <h2>Curso: Montador e reparador de computadores</h2>
-
-                    <div class="card-box">
-                        <p>Instituição: PBTec</p>
-                        <p ><span class="status">Status:</span> Concluído</p>
-                    </div>
-
-                    <div class="btn-download">
-                        Download <i class='bx bxs-cloud-download' ></i>
-                    </div>
-                </div>
-
-               
-            </div>  
+            <div class="about_content" id="ajax"></div>  
         </div>
     </section>
    
@@ -149,6 +111,6 @@
 
     </footer>
     <script src="js/typewriter.js"></script>
-    <script src="js/api_git.js"></script>
+
 </body>
 </html>
