@@ -1,4 +1,4 @@
-const token_acess = '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';
+const token_acess = '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';
 
 const requestOptions = {
 headers: {'Authorization': `Token ${token_acess}`}};

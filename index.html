@@ -30,7 +30,7 @@
 
     <title>Portifolio - Joanderson</title>
 </head>
-<body>
+<body onload="requisicaoPaginas('./pages/perfil.html')">
     
     <!-- Header of page -->
     <header class="header">
@@ -80,10 +80,10 @@
 
     <section id="about" class="about">
         <div class="content">
-            <div class="ajax">
-                <a id="perfil"><i class='bx bxs-checkbox-checked state'></i>Perfil</a>
-                <a ><i class='bx bxs-bookmarks state' ></i>Experiência</a>
-                <a ><i class='bx bxs-graduation state' ></i>Formação</a>
+            <div class="ajax"> 
+                <a id="perfil" onclick="requisicaoPaginas('./pages/perfil.html')"><i class='bx bxs-checkbox-checked state' ></i>Perfil</a>
+                <a onclick="requisicaoPaginas('./pages/experience.html')"><i class='bx bxs-bookmarks state'></i>Experiência</a>
+                <a onclick="requisicaoPaginas('./pages/training.html')"><i class='bx bxs-graduation state'></i>Formação</a>
             </div>
 
             <div class="about_content" id="ajax"></div>  
@@ -111,6 +111,7 @@
 
     </footer>
     <script src="js/typewriter.js"></script>
+    <script src="js/api_git.js"></script>
 
 </body>
 </html>
