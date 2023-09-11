@@ -1,4 +1,4 @@
-const token_acess = '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';
+const token_acess = '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';
 
 const requestOptions = {
 headers: {'Authorization': `Token ${token_acess}`}};
