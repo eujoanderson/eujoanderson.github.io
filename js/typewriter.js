@@ -31,5 +31,3 @@ function typeWords() {
 }
 
 typeWords();
-
-

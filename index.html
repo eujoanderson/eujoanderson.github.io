@@ -27,8 +27,6 @@
 
     <link rel="icon" href="img/icon.png">
 
-    <script src="./js/ajax.js"></script>
-
     <title>Portifolio - Joanderson</title>
 </head>
 <body onload="requisicaoPaginas('./pages/perfil.html')">
@@ -37,12 +35,12 @@
     <header class="header">
         <div class="identication-right" title="Navegation">
                 <nav class="identication">
-                    <i class='bx bx-up-arrow-alt'></i>
-                    <a href="#home" title="Home">01</a>
-                    <a href="#about" title="Sobre">02</a>
-                    <a href="#project" title="Projetos">03</a>
-                    <a href="#contato" title="Contato">04</a>
-                    <i class='bx bx-down-arrow-alt' ></i>
+                    <i class='bx bx-up-arrow-circle' style="opacity: 0.2;"></i>
+                    <a href="#home" title="Home" class="icon-left"><i class='bx bx-home-alt-2'></i></a>
+                    <a href="#about" title="Sobre"><i class='bx bx-child' ></i></a>
+                    <a href="#project" title="Projetos"><i class='bx bxs-book-open' ></i></a>
+                    <a href="#contato" title="Contato"><i class='bx bxs-contact' ></i></a>
+                    <i class='bx bx-down-arrow-circle' style="opacity: 0.2;"></i>
                 </nav>
         </div>
     </header>
@@ -81,13 +79,25 @@
 
     <section id="about" class="about">
         <div class="content">
-            <div class="ajax"> 
-                <a id="perfil" onclick="requisicaoPaginas('./pages/perfil.html')"><i class='bx bxs-checkbox-checked state' ></i>Perfil</a>
-                <a onclick="requisicaoPaginas('./pages/experience.html')"><i class='bx bxs-bookmarks state'></i>Experiência</a>
-                <a onclick="requisicaoPaginas('./pages/training.html')"><i class='bx bxs-graduation state'></i>Formação</a>
-            </div>
 
-            <div class="about_content" id="ajax"></div>  
+            <img src="./img/photo.jpg" alt="Photo_Perfil" class="content-img">
+
+            
+            <div class="about_content">
+
+                <div class="about_texts">
+                    <h4 class="name">Joanderson Dos Santos Souza</h4>
+                    <p class="text-perfil">
+                        Prazer, me chamo Joanderson e tenho 20 anos. Estou cursando o curso de "Redes de Computadores" no IFPB atualmente no 4 periodo da faculdade. Desenvolvi esse portifólio com intuito de práticar um pouco dos meus conhecimentos em programação que adquiri ao longo de 1 ano e meio. Esse projeto foi desenvolvido em HTML, CSS, JavaScript e utilização da API do github. 
+                        <p class="download">Para baixar o meu curriculo completo clique no botão abaixo! </p>
+                    </p>
+
+                    <a href="img/Curriculo - Joanderson.pdf" class="btn" title="Curriculo" target="_blank">Download CR <i class='bx bx-download'></i></a>
+                    </div>
+                    
+                    
+                </div>
+            </div>  
         </div>
     </section>
    
